@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        小米商城 - Xiaomi 13、Redmi K60、MIX FOLD 2、小米电视官方网站
+    </title>
+    <!-- 通过link标签导入外部样式表 -->
+    <link rel="stylesheet" href="./css/lib.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <!-- 引入第三方图标库 -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4381817_pc1fzpk29s.css">
+    <link rel="shortcut icon" href="./images/logo-mi2.png">
+
+</head>
+
+<body>
+    <!-- 导航条 -->
+    <nav>
+        <div class="topNav clearFix">
+
+            <!-- 版心 -->
+            <!-- 子元素浮动后 topNav元素高度为0 -->
+            <div class="container">
+
+                <ul class="leftContent fl">
+                    <li><a href="#">小米官网</a></li>
+                    <span>|</span>
+                    <li><a href="#">小米商城</a></li>
+                    <span>|</span>
+                    <li><a href="#">小米澎湃OS</a></li>
+                    <span>|</span>
+                    <li><a href="#">IoT</a></li>
+                    <span>|</span>
+                    <li><a href="#">云服务</a></li>
+                    <span>|</span>
+                    <li><a href="#">天星数科</a></li>
+                    <span>|</span>
+                    <li><a href="#">有品</a></li>
+                    <span>|</span>
+                    <li><a href="#">小爱开放平台</a></li>
+                    <span>|</span>
+                    <li><a href="#">资质证照</a></li>
+                    <span>|</span>
+                    <li><a href="#">协议规则</a></li>
+                    <span>|</span>
+                    <li><a href="#">下载app</a></li>
+                    <span>|</span>
+                    <li><a href="#">Select Location</a></li>
+                </ul>
+
+                <!-- 右侧导航栏 -->
+                <div class="rightContent fr">
+                    <ul class="fl">
+                        <li><a href="#">登录</a></li>
+                        <span>|</span>
+                        <li><a href="#">注册</a></li>
+                        <span>|</span>
+                        <li><a href="#">消息通知</a></li>
+                    </ul>
+
+                    <!-- 购物车 -->
+                    <div class="shopCart fr">
+                        <em class="iconfont icon-cart-empty"></em>
+                        购物车
+                        <span>(0)</span>
+                    </div>
+                    <div class="shopCartMenu">
+                        购物车中还没有商品，赶紧选购吧！
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 导航栏2 -->
+        <div class="header">
+            <div class="container">
+                <div class="content">
+                    <div class="logo">
+                        <a href="index.html"><img class="auto-img" src="./images/logo-mi2.png" title="小米商城" /></a>
+                    </div>
+                    <div class="headerNav">
+                        <ul>
+                            <li></li>
+                            <li>Xiaomi手机</li>
+                            <li>Redmi手机</li>
+                            <li>电视</li>
+                            <li>笔记本</li>
+                            <li>平板</li>
+                            <li>家电</li>
+                            <li>路由器</li>
+                            <li><a href="#">服务中心</a></li>
+                            <li><a href="#">社区</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 搜索框 -->
+                    <div class="headerSearch">
+                        <input type="text" placeholder="手机">
+                        <ul class="result-list">
+                            <li><a href="#">全部商品</a></li>
+                            <li><a href="#">Redmi K70</a></li>
+                            <li><a href="#">Redmi K70 Pro</a></li>
+                            <li><a href="#">小米14</a></li>
+                            <li><a href="#">小米手机</a></li>
+                            <li><a href="#">小米笔记本</a></li>
+                            <li><a href="#">空调</a></li>
+                        </ul>
+                        <button class="iconfont icon-search"></button>
+                    </div>
+                    <script>
+                        const input = document.querySelector('[type=text]')
+                        const ul = document.querySelector('.result-list')
+                        input.addEventListener('focus', function () {
+                            ul.style.display = 'block'
+                            input.classList.add('search')
+                        })
+
+                        input.addEventListener('blur', function () {
+                            ul.style.display = 'none'
+                            input.classList.add('search')
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图 -->
+    <main>
+        <div class="container">
+            <div class="bannerBox">
+                <div class="menuItem">
+                    <ul>
+                        <li>
+                            <a href="#">手机</a>
+                            <span class="iconfont icon-arrowright"></span>
+                        </li>
+                        <li>
+                            <a href="#">电视</a>
+                            <span class="iconfont icon-arrowright"></span>
+                        </li>
+                        <li>
+                            <a href="#">家电</a>
+                            <span class="iconfont icon-arrowright"></span>
+                        </li>
+                        <li>
+                            <a href="#">笔记本 平板</a>
+                            <span class="iconfont icon-arrowright"></span>
+                        </li>
+                        <li>
+                            <a href="#">出行 穿戴</a>
+                            <span class="iconfont icon-arrowright"></span>
+                        </li>
+                        <li>
+                            <a href="#">耳机 音响</a>
+                            <span class="iconfont icon-arrowright"></span>
+                        </li>
+                        <li>
+                            <a href="#">健康 儿童</a>
+                            <span class="iconfont icon-arrowright"></span>
+                        </li>
+                        <li>
+                            <a href="#">生活 箱包</a>
+                            <span class="iconfont icon-arrowright"></span>
+                        </li>
+                        <li>
+                            <a href="#">智能 路由器</a>
+                            <span class="iconfont icon-arrowright"></span>
+                        </li>
+                        <li>
+                            <a href="#">电源 配件</a>
+                            <span class="iconfont icon-arrowright"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner">
+                    <a href="#"><img class="auto-img" src="./images/item.png" title="Redmi K70 宣传图" /></a>
+                </div>
+
+                <!-- 按钮 -->
+                <div class="left-arrow iconfont icon-arrowleft"></div>
+                <div class="right-arrow iconfont icon-arrowright"></div>
+
+                <!-- 指示器 -->
+                <div class="bullets">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="productContent">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/bzfw.png" alt="保障服务" />
+                            保障服务
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/qytg.png" alt="企业团购" />
+                            企业团购
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/fmtd.png" alt="F码通道" />
+                            F码通道
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/mfk.png" alt="米粉卡" />
+                            米粉卡
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/yjhx.png" alt="以旧换新" />
+                            以旧换新
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/hfcz.png" alt="话费充值" />
+                            话费充值
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="productItems">
+                    <a href=""><img class="auto-img" src="./images/product01.png" alt="图片1"></a>
+                </div>
+                <div class="productItems">
+                    <a href=""><img class="auto-img" src="./images/product02.png" alt="图片2"></a>
+                </div>
+                <div class="productItems">
+                    <a href=""><img class="auto-img" src="./images/product03.png" alt="图片3"></a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <!-- 广告 -->
+        <div class="container">
+            <img src="./images/Lycra.png" alt="广告图" />
+        </div>
+
+        <!-- 手机 -->
+        <div class="phoneBox">
+            <div class="container">
+                <div class="p-title">
+                    <h2>手机</h2>
+                    <div class="more">
+                        <a href="#">
+                            查看更多
+                            <i class="arrow-right iconfont icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-items">
+                    <div class="item-l">
+                        <a href="#"><img class="auto-img" src="./images/K70.png"></a>
+                    </div>
+                    <ul class="item-r">
+                        <li>
+                            <a href="#">
+                                <img src="./images/K70 pro.png" alt="Redmi K70 Pro">
+                                <p>Redmi K70 Pro</p>
+                                <p>第三代骁龙8 年度旗舰平台</p>
+                                <p>3299元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Redmi K70.png" alt="Redmi K70">
+                                <p>Redmi K70</p>
+                                <p>第二代骁龙8 旗舰芯</p>
+                                <p>2499元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/K70E.png" alt="Redmi K70E">
+                                <p>Redmi K70E</p>
+                                <p>新一代旗舰焊门员</p>
+                                <p>1999元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Xiaomi 14 Pro.png" alt="Xiaomi 14 Pro">
+                                <p>Xiaomi 14 Pro</p>
+                                <p>徕卡Summilux可变光圈镜头｜小米澎湃OS</p>
+                                <p>4999元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Xiaomi 14.png" alt="Xiaomi 14">
+                                <p>Xiaomi 14</p>
+                                <p>徕卡光学Summilux镜头｜小米澎湃OS｜第三代骁龙®8移动平台</p>
+                                <p>3999元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Redmi Note 13 Pro.png" alt="Redmi Note 13 Pro">
+                                <p>Redmi Note 13 Pro</p>
+                                <p>小金刚品质</p>
+                                <p>1399元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Redmi Note 13 Pro+.png" alt="Redmi Note 13 Pro+">
+                                <p>Redmi Note 13 Pro+</p>
+                                <p>天玑 7200-Ultra 处理器</p>
+                                <p>1899元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Redmi Note 13 5G.png" alt="Redmi Note 13 5G">
+                                <p>Redmi Note 13 5G</p>
+                                <p>1 亿像素 更快更清晰</p>
+                                <p>1099元起</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 智能穿戴 -->
+        <div class="phoneBox">
+            <div class="container">
+                <div class="p-title">
+                    <h2>智能穿戴</h2>
+                    <div class="more">
+                        <span class="active">耳机</span>
+                        <span>穿戴</span>
+                    </div>
+                </div>
+                <div class="p-items">
+                    <div class="item-l">
+                        <a href="#"><img class="auto-img" src="./images/Xiaomi Watch S3.png"></a>
+                    </div>
+                    <ul class="item-r">
+                        <li>
+                            <a href="#">
+                                <img src="./images/Redmi Buds 5 Pro.png">
+                                <p>Redmi Buds 5 Pro</p>
+                                <p>同轴双单元 旗舰音质 | 52dB/4kHz 旗舰降噪 | 49ms 超低延迟</p>
+                                <p>399元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Redmi Buds 5.png">
+                                <p>Redmi Buds 5</p>
+                                <p>46dB深度降噪丨12.4mm镀钛动圈丨40小时超长续航</p>
+                                <p>199元</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Redmi Buds 5 AAPE 潮流限定版.png">
+                                <p>Redmi Buds 5 AAPE 潮流限定版</p>
+                                <p>46dB深度降噪丨12.4mm镀钛动圈丨40小时超长续航</p>
+                                <p>299元</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Xiaomi Buds 4 Pro.png">
+                                <p>Xiaomi Buds 4 Pro</p>
+                                <p>48dB智能动态降噪｜骨声纹通话降噪 | 独立空间音频</p>
+                                <p>849元</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Xiaomi Buds 4.png">
+                                <p>Xiaomi Buds 4</p>
+                                <p>半入耳主动降噪｜HiFi音质 | 独立空间音频</p>
+                                <p>549元</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Xiaomi Buds 3 Pro.png">
+                                <p>Xiaomi Buds 3 Pro</p>
+                                <p>40dB自适应降噪 ｜空间音频 ｜ HiFi高保真音质</p>
+                                <p>349元</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Redmi Buds 4 Pro.png">
+                                <p>Redmi Buds 4 Pro</p>
+                                <p>43dB 宽频降噪 | HiFi 高保真音质 | 59ms 游戏低延迟</p>
+                                <p>319元</p>
+                            </a>
+                        </li>
+                        <li class="items">
+                            <div class="top-item">
+                                <div class="text">
+                                    <p>Redmi Buds 4 活力版</p>
+                                    <p>89元</p>
+                                </div>
+                                <img src="./images/Redmi Buds 4 活力版.png">
+                            </div>
+                            <div class="bottom-item">
+                                <div class="more-link">
+                                    <span>浏览更多</span>
+                                    <span>耳机</span>
+                                </div>
+                                <div class="icon iconfont icon-arrow-right1"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 笔记本|平板 -->
+        <div class="phoneBox">
+            <div class="container">
+                <div class="p-title">
+                    <h2>笔记本 | 平板</h2>
+                    <div class="more">
+                        <span class="active">热门</span>
+                    </div>
+                </div>
+                <div class="p-items">
+                    <div class="item-l">
+                        <a href="#"><img class="auto-img" src="./images/Redmi Book 14.png"></a>
+                    </div>
+                    <ul class="item-r">
+                        <li>
+                            <a href="#">
+                                <img src="./images/Redmi Pad SE.png">
+                                <p>Redmi Pad SE</p>
+                                <p>高性价比千元平板｜11英寸高刷护眼大屏｜全金属一体机身｜73.2天超长待机</p>
+                                <p>999元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Xiaomi Pad 6 Max 14.png" />
+                                <p>Xiaomi Pad 6 Max 14</p>
+                                <p>14英寸大屏幕|骁龙8+处理器|PC级多任务工作台</p>
+                                <p>3799元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Xiaomi Pad 6.png">
+                                <p>Xiaomi Pad 6</p>
+                                <p>11英寸2.8K护眼屏｜骁龙870旗舰处理器｜8840mAh大电量｜MIUI高效办公体验</p>
+                                <p>1799元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Xiaomi Pad 6 Pro.png">
+                                <p>Xiaomi Pad 6 Pro</p>
+                                <p>骁龙8+旗舰处理器｜11英寸2.8K护眼屏｜8600mAh 67W快充｜MIUI高效办公体验</p>
+                                <p>2349元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Redmi G 游戏本 2022.png">
+                                <p>Redmi G 游戏本 2022</p>
+                                <p>16英寸 2.5K 165Hz 电竞大屏</p>
+                                <p>7499元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/RedmiBook Pro 15 2022 锐龙版.png">
+                                <p>RedmiBook Pro 15 2022 锐龙版</p>
+                                <p>可选全新锐龙7 6800H处理器，3.2K 90Hz高清屏，RTX 2050高性能独立显卡，CNC一体精雕工艺</p>
+                                <p>5499元起</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/Redmi Book 15E.png">
+                                <p>Redmi Book 15E</p>
+                                <p>15.6" 全高清大屏</p>
+                                <p>3599元起</p>
+                            </a>
+                        </li>
+                        <li class="items">
+                            <div class="top-item">
+                                <div class="text">
+                                    <p>Redmi G Pro 游戏本 锐龙版</p>
+                                    <p>7299元起</p>
+                                </div>
+                                <img src="./images/Redmi G Pro 游戏本 锐龙版.png">
+                            </div>
+                            <div class="bottom-item">
+                                <div class="more-link">
+                                    <span>浏览更多</span>
+                                    <span>热门</span>
+                                </div>
+                                <div class="icon iconfont icon-arrow-right1"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 家电 -->
+        <div class="phoneBox">
+            <div class="container">
+                <div class="p-title">
+                    <h2>家电</h2>
+                    <div class="more">
+                        <span class="active">热门</span>
+                        <span>电视影音</span>
+                        <span>空调</span>
+                    </div>
+                </div>
+                <div class="p-items">
+                    <div class="brick-item">
+                        <div>
+                            <a href="#"><img class="auto-img" src="./images/小米电视6.png"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img class="auto-img" src="./images/洗烘一体机.png"></a>
+                        </div>
+                    </div>
+                    <ul class="item-r">
+                        <li>
+                            <a href="#">
+                                <img src="./images/小米电视6 65”  OLED.png">
+                                <p>小米电视6 65” OLED</p>
+                                <p>OLED自发光屏 | 百万级对比度 | 4.6mm超薄全面屏</p>
+                                <p>5999元</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/小米电视6 至尊版.png" />
+                                <p>小米电视6 至尊版 65英寸</p>
+                                <p>百级分区背光 | 双120Hz高刷 | 4.5GB+64GB</p>
+                                <p>6899元</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/小米电视 ES55.png">
+                                <p>小米电视 ES55 2022款</p>
+                                <p>多分区背光 | MEMC动态补偿 | 杜比视界</p>
+                                <p>2299元</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/小米空调.png">
+                                <p>巨省电 小米空调 1.5匹新1级能效</p>
+                                <p>强劲制冷 | 高效节能 | 智能互联</p>
+                                <p>2099元</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/米家新风空调.png">
+                                <p>米家新风空调 立式3匹</p>
+                                <p>全屋快通风，就要大新风</p>
+                                <p>6999元</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/米家分区洗烘一体机.png">
+                                <p>米家分区洗烘一体机 15kg</p>
+                                <p>健康分开洗 一台就够了</p>
+                                <p>4999元</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/米家波轮洗衣机.png">
+                                <p>米家波轮洗衣机 10kg</p>
+                                <p>全景玻璃阻尼上盖 防夹手</p>
+                                <p>899元</p>
+                            </a>
+                        </li>
+                        <li class="items">
+                            <div class="top-item">
+                                <div class="text">
+                                    <p>米家迷你波轮洗衣机Pro 3kg</p>
+                                    <p>799元</p>
+                                </div>
+                                <img src="./images/米家迷你波轮洗衣机Pro.png">
+                            </div>
+                            <div class="bottom-item">
+                                <div class="more-link">
+                                    <span>浏览更多</span>
+                                    <span>热门</span>
+                                </div>
+                                <div class="icon iconfont icon-arrow-right1"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 广告图 -->
+    <div class="bottom-title">
+        <div class="container">
+            <a href="#"><img src="./images/小米巨能写功能笔.png" /></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
