@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* 浮动 */
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+/* 伪类清除浮动 */
+.clearFix::after,
+.clearFix::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 版心 */
+.container{
+    width: 1226px;
+    /* 元素水平居中 */
+    margin:0 auto;
+}
+
+.auto-img{
+    width: 100%;
+    display: block;
+}
